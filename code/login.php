@@ -73,11 +73,13 @@ span.psw {
   $secretkey = 'GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ';
 ?>
 
-<h2>Login Form With Google Authenticator + Fail2Ban</h2>
+<h2 style="text-align:center">Login Form With Google Authenticator + Fail2Ban</h2>
 
 <form action="action.php" method="post">
   <div class="imgcontainer">
     <?php print sprintf('<img src="%s"/>', TokenAuth6238::getBarCodeUrl('','',$secretkey,'Pringgo Tugas'));?>
+    <br>
+    Scan Me
   </div>
 
   <div class="container">
@@ -88,7 +90,7 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="password" required>
 
     <label for="psw"><b>OTP</b></label>
-    <input type="text" placeholder="Enter Password" name="otp" required>
+    <input type="text" placeholder="Enter Code Google Authenticator" name="otp" required>
         
     <button type="submit">Login</button>
   </div>

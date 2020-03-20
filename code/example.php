@@ -2,7 +2,7 @@
 	require_once('rfc6238.php');
 	
 	$secretkey = 'GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ';
-	$currentcode = '571427';
+	$currentcode = '030641';
 
 	if (TokenAuth6238::verify($secretkey,$currentcode)) {
 		echo "Code is valid\n";

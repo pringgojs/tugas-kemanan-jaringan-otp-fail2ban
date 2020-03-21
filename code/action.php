@@ -13,11 +13,11 @@
     } else {
       echo "Username and Code is invalid\n";
       $tanggal=date('M j H:i:s');
-      system("echo " . $tanggal . " GAGAL " . $_SERVER['REMOTE_ADDR'] . " >> /var/www/html/log/report") ;
+      system("echo " . $tanggal . " GAGAL " . $_SERVER['REMOTE_ADDR'] . " >> /Applications/XAMPP/htdocs/php-otp/code/log") ;
     }
 	} else {
     echo "Invalid code\n";
     $tanggal=date('M j H:i:s');
-    system("echo " . $tanggal . " GAGAL " . $_SERVER['REMOTE_ADDR'] . " >> /var/www/html/log/report") ;
+    system("echo " . $tanggal . " GAGAL " . $_SERVER['REMOTE_ADDR'] . " >> /Applications/XAMPP/htdocs/php-otp/code/log") ;
 	}
 ?>
